@@ -1,0 +1,104 @@
+.cajon {
+  width: 100%;
+  height: 821px;
+  &.verde {
+    background-color: #0d554a;
+    display: flex;
+  }
+  &.blanco {
+    background-color: #ffffff;
+  }
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 62px;
+  background-color: #0d554a;
+
+  .mitad {
+    width: 50% !important;
+    display: flex;
+    &.botones {
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+      text-align: left;
+      .boton {
+        width: 77.26px;
+        height: 43px;
+        border-radius: 4px;
+        color: #ffffff;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        &:hover {
+          color: #f5d38e;
+        }
+      }
+    }
+  }
+  h1 {
+    margin-left: 25%;
+    color: #f5d38e;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.titulo {
+  margin-left: 25%;
+  font-family: Cormorant Garamond;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 94px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f5d38e;
+}
+
+.cajonTitulo {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.btn {
+  margin-left: 25%;
+  width: 200px;
+  height: 52px;
+  top: 538px;
+  left: 132px;
+  padding: 12px 59px 12px 59px;
+  border-radius: 26px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.eye {
+  position: absolute;
+  top: 96px;
+  left: 306px;
+  z-index: 2;
+}
+
+.heaven {
+  position: absolute;
+
+  z-index: 1;
+}
