@@ -175,6 +175,14 @@ body {
   padding-left: 100px;
   padding-right: 100px;
 }
+.padding-custome2 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
 h2 {
   font-family: "Cormorant Garamond", serif;
@@ -389,6 +397,13 @@ footer .primer-cajon {
 
 .menu {
   display: none;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
 }
 
 @media screen and (max-width: 1200px) {
