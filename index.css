@@ -435,17 +435,10 @@ footer .primer-cajon {
     align-items: center;
   }
 
-  section {
+  .features .cajon1 {
     display: flex;
-    .features {
-      display: flex;
-      .cajon1 {
-        padding-left: 100px !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+    flex-direction: column;
+    align-items: center;
   }
 
   .imagen-responsive {
