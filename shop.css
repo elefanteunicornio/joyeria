@@ -1,0 +1,380 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #093931;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 62px;
+  .mitad {
+    width: 50%;
+  }
+  .mitad span {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #f5d38e;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .botones {
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .boton {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    &:hover {
+      color: #f5d38e;
+    }
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.espacio-verde {
+  background-color: #093931;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+
+  h1 {
+    color: #f5d38e;
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    height: 50px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.input-serch {
+  background-color: white;
+  height: 35px;
+  width: 500px;
+  border: 1px solid white;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5px;
+
+  img {
+    display: flex;
+    color: #323842;
+  }
+
+  input {
+    display: flex;
+    width: auto;
+    background-color: transparent;
+    border: 0px;
+    color: #323842;
+  }
+}
+
+.parte1 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 10vh;
+
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+
+  .caja-botones {
+    display: flex;
+
+    button {
+      display: flex;
+      color: #0d554a;
+      text-decoration: none;
+      outline: none;
+      flex-direction: row;
+      background-color: transparent;
+      border: 0px;
+      border-radius: 19px;
+      align-items: center;
+      justify-content: center;
+
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      width: 148.6px;
+      height: 38px;
+      padding: 8px, 0px, 8px, 0px;
+      border-radius: 19px;
+
+      &:hover {
+        color: white;
+        background-color: #093931;
+      }
+    }
+  }
+
+  .dropdown {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    right: 0px;
+
+    display: flex;
+    width: 138px;
+    height: 36px;
+    border: none;
+    border-bottom: 1px solid #9095a0;
+  }
+}
+
+.contenedor-productos1 {
+  margin: 0;
+  padding: 15px 100px 50px 100px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .imagen-grande-shop {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #e5e5e5;
+
+    h6 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    span {
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  .imagenes-pequenas-shop {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #e5e5e5;
+
+    h6 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    span {
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+}
+
+section .paginacion {
+  margin: 0;
+  padding: 25px 100px 50px 100px;
+  display: flex;
+  text-decoration: none;
+  outline: none;
+  justify-content: center;
+}
+.paginacion a {
+  text-decoration: none;
+  outline: none;
+  color: #9095a0;
+  float: left;
+  padding: 8px 16px;
+}
+
+.paginacion a:hover {
+  color: #093931;
+}
+
+footer .primer-cajon {
+  display: flex;
+  flex-direction: row;
+  .parte-uno {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+    .nombre {
+      width: 300px;
+      display: flex;
+      margin-top: 50px;
+      h1 {
+        color: #f5d38e;
+        font-family: Cormorant Garamond;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    div p {
+      color: #ffffff;
+    }
+    .links {
+      gap: 60px;
+      display: flex;
+      width: 577px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.contacto {
+  padding-left: 200px;
+  color: #ffffff;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  p small {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.cajon-email {
+  height: 35px;
+  width: min-content;
+  border: 1px solid white;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  input {
+    width: auto;
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .input-caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  button {
+    width: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 0px;
+    background-color: #f2c66d;
+    border-radius: 0px 18px 18px 0px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.padding-custome2 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
