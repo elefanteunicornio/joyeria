@@ -8,6 +8,10 @@ header {
   padding-left: 100px;
   padding-right: 100px;
   height: 62px;
+  a {
+    text-decoration: none;
+    outline: none;
+  }
   .mitad {
     width: 50%;
   }
@@ -47,6 +51,10 @@ header {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
+  }
+
+  .menu {
+    display: none;
   }
 }
 
@@ -146,6 +154,10 @@ header {
     }
   }
 
+  .dropdown-botones {
+    display: none;
+  }
+
   .dropdown {
     font-family: "Manrope", sans-serif;
     font-size: 14px;
@@ -154,7 +166,6 @@ header {
     letter-spacing: 0em;
     text-align: left;
     right: 0px;
-
     display: flex;
     width: 138px;
     height: 36px;
@@ -262,8 +273,17 @@ section .paginacion {
 footer .primer-cajon {
   display: flex;
   flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  .caja-contacto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
   .parte-uno {
-    padding-left: 100px;
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -298,7 +318,6 @@ footer .primer-cajon {
 }
 
 .contacto {
-  padding-left: 200px;
   color: #ffffff;
   padding-top: 80px;
   display: flex;
@@ -377,4 +396,77 @@ footer .primer-cajon {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    .botones {
+      .boton {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+
+  .espacio-verde {
+    .input-serch {
+      min-width: fit-content;
+      width: 90%;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .parte1 {
+    .caja-botones {
+      display: none;
+    }
+    .dropdown-botones {
+      display: flex;
+    }
+  }
+  .contenedor-productos1 {
+    grid-template-columns: repeat(2, 49%);
+    gap: 10px;
+    padding: 15px 10px 50px 10px;
+  }
+
+  .oculto-mobile {
+    display: none;
+  }
+
+  footer .primer-cajon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    .parte-uno {
+      flex-direction: column;
+      .nombre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
+    }
+    .caja-contacto {
+      .contacto {
+        padding-top: 0px;
+      }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
