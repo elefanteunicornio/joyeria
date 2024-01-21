@@ -1,7 +1,7 @@
 .cajon {
   height: auto;
   &.verde {
-    background-color: #0d554a;
+    background-color: #093931;
     display: flex;
     height: 820px;
   }
@@ -17,7 +17,7 @@
 header {
   display: flex;
   height: 62px;
-  background-color: #0d554a;
+  background-color: #093931;
 
   .mitad {
     width: 50% !important;
@@ -41,6 +41,11 @@ header {
         text-decoration: none;
         &:hover {
           color: #f5d38e;
+        }
+        img {
+          &:hover {
+            color: #f5d38e;
+          }
         }
       }
     }
