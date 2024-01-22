@@ -59,7 +59,6 @@ header {
 }
 
 main {
-  display: flex;
   padding-left: 100px;
   padding-right: 100px;
 
@@ -83,4 +82,668 @@ main {
       color: #0d554a;
     }
   }
+
+  .imagenes {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+
+    .imgenes_pequenas {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+
+      img {
+        width: 64px;
+        height: 82px;
+        border-radius: 4px;
+      }
+    }
+    .img_grande {
+      margin: 0;
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 477px;
+      height: 636px;
+
+      img {
+        border-radius: 4px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        right: 35px;
+        z-index: 2;
+      }
+    }
+  }
+  .producto {
+    display: flex;
+    flex-direction: row;
+
+    .descripcion_producto {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+
+      h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #0d554a;
+        margin-bottom: 0px;
+      }
+
+      h5 {
+        color: #323842;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+      }
+
+      h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #b37d10;
+        font-family: "Manrope", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      span {
+        color: #424955;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .opcion_colores {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        button {
+          display: block;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          cursor: pointer;
+
+          &.plateado {
+            background-color: #dee1e6;
+            border: none;
+          }
+          &.oro_rosa {
+            background-color: #e6ae87;
+            border-color: 2px solid #0d554a;
+          }
+        }
+      }
+
+      .talla {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        a {
+          text-decoration: none;
+          color: #424955;
+          font-family: "Manrope", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: right;
+        }
+      }
+
+      .botones_talla {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        button {
+          border-radius: 4px;
+          cursor: pointer;
+          border: 1px solid #565e6c;
+          background-color: white;
+          color: #565e6c;
+          font-family: "Manrope", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+
+      .cantidad {
+        margin-top: 15px;
+      }
+
+      .boton_cantidad_producto {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        button {
+          background-color: #f3f4f6;
+          border-radius: 4px;
+          cursor: pointer;
+          border: none;
+          width: 39px;
+          height: 44px;
+        }
+
+        div {
+          font-family: "Manrope", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          background-color: #f3f4f6;
+          border-radius: 4px;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 39px;
+          height: 44px;
+        }
+      }
+    }
+
+    .botones_compra {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 15px;
+      margin-top: 20px;
+
+      button {
+        cursor: pointer;
+        width: 266px;
+        height: 52px;
+        border-radius: 26px;
+        border: 1px solid #0d554a;
+        font-family: "Manrope", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+
+        &.bag {
+          gap: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ffffff;
+          border-color: #0d554a;
+          color: #0d554a;
+        }
+
+        &.buy {
+          background-color: #0d554a;
+          color: white;
+        }
+      }
+    }
+    .grupo_dropdown {
+      width: 100%;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+
+      .dropdown {
+        color: #171a1f;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        right: 0px;
+        display: flex;
+        height: 36px;
+        border: none;
+        border-bottom: 1px solid #9095a0;
+      }
+    }
+  }
+
+  .seccion_video {
+    margin-top: 50px;
+    display: flex;
+  }
+  .descripcion {
+    background-color: #fafafb;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 8px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h4 {
+        margin: 0;
+        color: #323842;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      h2 {
+        margin: 0;
+        color: #0d554a;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      span {
+        color: #323842;
+        font-family: "Manrope", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+
+  .servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .servicio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 270px;
+
+      img {
+        width: 62px;
+        height: 62px;
+      }
+
+      h3 {
+        justify-content: center;
+      }
+
+      span {
+        text-align: center;
+      }
+    }
+  }
+
+  .otros_productos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 77px;
+
+    h3 {
+      color: #0d554a;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .productos {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        box-shadow: 0px 0px 1px 0px#545454;
+
+        img {
+          border-radius: 8px 8px 0 0;
+        }
+      }
+
+      h6 {
+        margin: 0;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      span {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+
+  .contacto {
+    color: #ffffff;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    p small {
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+  }
+
+  .cajon-email {
+    height: 35px;
+    width: min-content;
+    border: 1px solid white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    input {
+      width: auto;
+      background-color: transparent;
+      border: 0px;
+    }
+
+    .input-caja {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+    }
+    button {
+      width: auto;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      border: 0px;
+      background-color: #f2c66d;
+      border-radius: 0px 18px 18px 0px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.seccion_verde {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #093931;
+  padding-top: 60px;
+
+  .primer_lado {
+    margin: 30px;
+    width: 40%;
+
+    h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 68px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    span {
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  .segundo_lado {
+    background-color: #171a1f4d;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 8px;
+
+    img {
+      border-radius: 8px 0 0 8px;
+    }
+
+    div {
+      margin: 50px 30px;
+
+      span {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      h3 {
+        font-family: "Manrope", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      h4 {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #093931;
+}
+footer .primer-cajon {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  .caja-contacto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+  .parte-uno {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+    .nombre {
+      width: 300px;
+      display: flex;
+      margin-top: 50px;
+      h1 {
+        color: #f5d38e;
+        font-family: Cormorant Garamond;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    div p {
+      color: #ffffff;
+    }
+    .links {
+      gap: 60px;
+      display: flex;
+      width: 577px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.contacto {
+  color: #ffffff;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  p small {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.cajon-email {
+  height: 35px;
+  width: min-content;
+  border: 1px solid white;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  input {
+    width: auto;
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .input-caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  button {
+    width: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 0px;
+    background-color: #f2c66d;
+    border-radius: 0px 18px 18px 0px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.padding-custome2 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }

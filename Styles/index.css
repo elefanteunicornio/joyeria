@@ -31,6 +31,7 @@ header {
       height: 100%;
       margin-top: 10px;
       text-align: left;
+
       .boton {
         width: 77.26px;
         height: 43px;
@@ -41,11 +42,6 @@ header {
         text-decoration: none;
         &:hover {
           color: #f5d38e;
-        }
-        img {
-          &:hover {
-            color: #f5d38e;
-          }
         }
       }
     }
